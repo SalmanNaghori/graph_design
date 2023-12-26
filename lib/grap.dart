@@ -48,7 +48,23 @@ class _GrapScreenState extends State<GrapScreen> {
                   dashArray: <double>[5, 5]),
               axisLine: AxisLine(color: Colors.transparent, width: 0.0),
             ),
-            tooltipBehavior: TooltipBehavior(enable: true),
+            tooltipBehavior: TooltipBehavior(
+              activationMode: ActivationMode.longPress,
+              enable: true,
+              animationDuration: 1,
+              format: 'point.ykWh',
+              header: "",
+              canShowMarker: false,
+              tooltipPosition: TooltipPosition.auto,
+
+              //          enable: true,
+              // color: Colors.transparent,
+              // header: "",
+              // duration: 0,
+              // format: "point.y%\npoint.x",
+              // canShowMarker: false,
+              // textAlignment: ChartAlignment.center
+            ),
             series: <CartesianSeries<ChartData, String>>[
               ColumnSeries<ChartData, String>(
                 dataSource: chartData,
