@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:graph_design/grap.dart';
+import 'package:graph_design/grap_column.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 void main() {
